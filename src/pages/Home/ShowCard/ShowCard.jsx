@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import "./ShowCard.css";
 
 const ShowCard = ({ show }) => {
-  console.log(show);
-
   return (
     <div className="card">
       <img

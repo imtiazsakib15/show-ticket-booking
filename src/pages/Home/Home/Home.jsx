@@ -1,20 +1,9 @@
-import { useQuery } from "@tanstack/react-query";
 import "./home.css";
-import axios from "axios";
 import ShowCard from "../ShowCard/ShowCard";
+import useGetShows from "../../../hooks/useGetShows";
 
 const Home = () => {
-  const {
-    isPending,
-    error,
-    data: shows,
-  } = useQuery({
-    queryKey: ["shows"],
-    queryFn: async () => {
-      const res = await axios.get("https://api.tvmaze.com/search/shows?q=all");
-      return res.data;
-    },
-  });
+  const { isPending, error, data: shows } = useGetShows();
 
   if (isPending)
     return (

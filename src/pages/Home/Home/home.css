@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 20px;
+    padding-bottom: 40px;
 }
 
 .header {
