@@ -11,6 +11,10 @@ const Router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: "/show/:id",
+        element: <Home />,
+      },
     ],
   },
 ]);

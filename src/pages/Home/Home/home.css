@@ -16,3 +16,22 @@
     text-align: center;
     margin: 30px auto;
 }
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+    .showCards {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .showCards {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .showCards {
+        grid-template-columns: auto;
+    }
+}
